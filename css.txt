@@ -1,0 +1,136 @@
+1) HTML Tags and elements
+   HTML elements are defined by a starting tag may contain some content and a closing tag.
+   For eg: <h1>Heading</h1> is a HTml element and 
+   HTML tags is starting and closing tag
+   
+2) Void Element : In the void element, not the closing tag.
+   <hr/> <img/> <br/>
+   
+3) HTml entities : In Html some characters are reserved like <, >, / etc.
+   So, instead of these closing we can use &lt;, &gt;
+  
+4) Class : Multiple elements in HTML can have the same class value.
+
+5) ID: id is unique for every element
+
+6) Describe HTML layout structure?
+   <header> <footer> <nav> <article> <section> <aside>
+   
+7) HTML and HTML5
+   HTML5 supports both audio and video. 
+   HTML does not have support audio and video
+   
+8) How to optimize website assets loading?
+   To optimize website load time we need to optimize. With the help of below we can optimize easily
+   a) File Compression
+   b) Minify scripts
+   c) Lazy loading
+   
+9) Formatting tags
+   b, i, small, strong, em, small, mark
+   
+10) How many ways you can display HTML element?
+   inline, block, inline-block, flex, 
+   inline: span, a, strong , img , label , button
+   block: div, p , header, footer, article, section
+   
+11) display none and visibility hidden
+   visibility hidden : hides the element but it still takes up space in the layout.
+   display none : removes the element from the document. It does not take up any space.
+   
+12) In how many ways can we specify the css styles for the html element?
+    Inline, internal, external
+	
+                                              CSS
+  
+1) Box Model
+   The box model is used to define the design and layout of element of css.
+   It contains:  content, padding, border, margin
+   
+2) Selectors in css
+   Element Selector: eg p 
+   class selector
+   id selector 
+   
+3) float: move the image left to right with content. change the direction.
+
+4) z-index: the z-index helps to specify the stack order of positioned elements that may overlap one another.
+
+5) Pseudo class: Pseudo class is the type of pseudo element:  hover, active, visit, focus
+   Pseudo element : ::before, ::after.
+   
+   
+   
+                                         JAVSCRIPT
+										 
+1) Javascipt: Javascript is a high level programming language which is used for developing dynamic and 
+   interactive web pages. Its a scripting language.
+   
+2) Variables : 3 types of variables in js
+   var: var has function scope or global scope, depending on where they declared.
+   It can be reassigned and redeclared.
+   
+   let : let have block scope. They can redeclared but not redeclared.
+   
+   const : const also have block scope like let but they cannot be reassigned once a value is assigned.
+   
+3) Hoisting: Hoisting is a behaviour in Javascript where variable and function declarations are moved to the
+   top of their containing scope.
+   1) Variable hoisting:
+       console.log(x);
+	   var x=5;
+	   
+   2) Function hoisting
+    greet();
+	function greet(){
+	  console.log("Hi")
+	}
+	
+4) Diffence between == and ===
+   The difference b/w both the operator is that "==" is used to compare values whereas "===" is used to compare
+   both values and types.
+   
+5) Coercion
+   Coercion in js refers to the automatic type conversion that occurs when performing operations between values 
+   of different types.
+   a) Implicit coercion
+      var a  = 10;
+      var b = "5"
+      var result = a+b;
+      console.log(result) // 105
+    b) Explicit coercion
+         var a= "42"
+         var b = Number(a)
+         console.log(b);    // Output 42
+
+6) What is NaN
+   NaN is Not a Number. Basically returns the boollen value true false.
+   ex: isNan("Hello")	true
+       isNaN(113) false    number ko false bta aga or string ko true   
+	   
+7) Pass by value and Pass by Reference
+   Pass by Value: When a variable is passed by value, a copy of the value is created and passed to the function.
+   And changes on that particular value.
+   
+   function increment(x) {
+	  x++;
+	  console.log("Inside function:", x);
+	}
+
+	var num = 5;
+	increment(num);
+	console.log("Outside function:", num); 
+   
+   Pass by Reference: 
+   When a variable is passed by reference , a reference to the original value is passed to the function.
+   function modifyArray(arr) {
+	  arr.push("Item 4");
+	  console.log("Inside function:", arr);
+	}
+
+	var myArray = ["Item 1", "Item 2", "Item 3"];
+	modifyArray(myArray);
+	console.log("Outside function:", myArray); 
+	
+8) Strict Mode 
+   Pending

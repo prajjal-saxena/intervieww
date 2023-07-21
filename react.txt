@@ -1,0 +1,93 @@
+1) What is react?
+   React is an open source front-end javascript library function. Provide us one page application.
+   
+2) React major function
+   JSX (Javascript XML), Virtual DOM, server side rendering, component based
+   - With the help of JSX we can write the code together html and javascript.
+   - Virtual DOM : 
+     * The virtual DOM is a programming concept and technique used in web development to improve the
+	   performance of UI rendering.
+	 * React makes the lightweight copy of real DOM is called virtual DOM in memory.
+      Suppose we have change any component design so that time all the changes store in the virtual
+	  DOM and reflects on our screen. After that Real DOM compares the virtual DOM changes and implement
+	  all the changes applied on the Real DOM
+   
+3) Components and element : 
+    React Element : React Element is like a description of the website which is seen by us on the screen.
+	It is a virtual representation of an HTML element. Syntax:
+	React.createElement()
+	
+	Components : Component is like a reuseable building block that you can use to create different parts of user
+	interface
+	
+4) State: 
+   State manages and holds the data of a component. It represents a current state of a component and can be
+   changed over time.
+   
+   function Counter(){
+      const [count, setCount] = useState(0);
+	  
+   }
+   
+   const incrementCount = () =>{
+      setCount(count + 1);
+   }
+    
+   return (
+     <div>
+	   <p>Count : {count}</p>
+	   <button onClick= {incrementCount}>Increment</button>
+   )
+  
+ 5) Pure Components : 
+    Purecomponent ( Inheritance kii tarah hota ha) is a subclass of components and support all the components.
+	
+ 6) Props : Props are the information that you pass to a JSX tag. Props stands for properties. Its a way 
+    to pass data from a parent component to a child component.
+	
+ 7) Why should we not update the state directly?
+    In the react, it is recommended not to update the state directly. With the help of setState() method which
+	is provided by the react should be used to update the state.
+	Directly updating the state can make your code difficult to modify and maintain in the future.
+	
+  8) Mutable and Immutable
+    Mutable means we can directly change the state value.
+	Immutable means we cannot change the value directly. With the help of setState we can change the state.
+	
+  9) What is the purpose of callback function as an argument of setState()?
+     The purpose of providing a callback function as an argument to setState() is to handle any necessary 
+	 operations after the state update has been completed.
+	 
+   10) difference b/w foreach and map?
+    The main difference between forEach() and map() is the return value. The forEach() method does not 
+	return anything. It simply iterates over the array 
+	the map() method returns a new array containing the results of applying the callback function to 
+	each element
+	
+	11) Limitations in react
+	 * React is just a library not a full framework
+	 * Its library is large and takes time to understand.
+	 * Coding gets complex as it uses inline templating and JSX
+	 
+	12) Why can't browsers read JSX?
+	 Browsers can only read javascript objects but jsx is not a regular js object. Firstly JSX file transform
+	 into a js object using jsx transformers like babel and then pass it to the browser.
+	 
+	13) How different is React's ES6 syntax when compared to ES5?
+	ES5 : using require var React = require('react');   ES6 : import React from "react";
+	ES5 exports vs ES6 export : ES5 module.exports = Component;  ES6 export default component
+	
+	14) Explain the lifecycle methods of React Components in lifecycle.
+	1) Initial Rendering Phase: This is the phase when the component is about to start its life journey and 
+	   make its way to the DOM.
+	2) Updating Phase : Once the component gets added to the DOM, it can potentially update and re-render only 
+	   when a prop or state change occurs.
+	 
+    3) Unmounting phase: This is the final phase of a component's life cycle in which the component is destroyed
+	   and removed from the DOM.
+	   
+	15) Events in React
+	 Events are a way to handle user interactions, such as button clicks, form submission, or keyboard input.
+	 But there are some syntactical differences like.
+	 a) Events are named using camel case instead of just using the lowercase.
+	 b) Events are passed as functions instead of strings.
